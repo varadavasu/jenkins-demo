@@ -1,0 +1,13 @@
+pipeline{
+  agent{
+     docker{image its-alpine3.21}
+  }
+ stages{
+    stage{
+      steps{
+        sh'node --version'
+      }
+    }
+ }
+}
+
