@@ -1,0 +1,12 @@
+pipeline {
+  agent {
+    docker {image its-alpine}
+  }
+  stages {
+    stage(test) {
+      steps {
+        sh 'node --version'
+      }
+    }
+  }
+}
